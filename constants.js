@@ -7,7 +7,7 @@ const moveKeys = {
   d: "Move: right",
 };
 
- const sayMessage = {
+const sayMessage = {
   m: 'Say: Hey Snake!',
   g: 'Say: Have Good game!',
   h: 'Say: Have fun!'
