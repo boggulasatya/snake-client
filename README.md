@@ -15,10 +15,23 @@ Before you can run this client, you will need to be running the server side whic
 ## Getting Started
 
 - To run the snake client, one first need to set up and run the server side of the project as mentioned below:
-1. Clone serverside code from https://github.com/lighthouse-labs/snek-multiplayer.git
-2. Open a terminal/command prompt and navigate to the snek-multiplayer directory.
-3. Install the necessary dependencies by running the following commands:
+- Clone serverside code from [https://github.com/lighthouse-labs/snek-multiplayer.git].
+- Open a terminal/command prompt and navigate to the snek-multiplayer directory.
+- Install the necessary dependencies by running the following commands:
     npm install
+    
     npm run play
 
-- Run the development snake client using the `node play.js` command.
+- Clone the client-side code from the GitHub repository [https://github.com/boggulasatya/snake-client].
+- Open a terminal and navigate to the snake-client directory.
+- Run the Snake client using the following command:
+  node play.js
+
+# Note:
+
+- Update the port number in constants.js info by running snek-multiplayer so that one can run it on their computer.
+
+# Controls
+
+- Use  w, a, s, d keys to navigate the snake: up, left, down, right.
+- Use m, g, h keys to send messages to server to display text on screen, next to snake: Hey Snake!, Have a good game!, Have fun!.
