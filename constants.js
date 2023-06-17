@@ -9,7 +9,7 @@ const moveKeys = {
 
 const sayMessage = {
   m: 'Say: Hey Snake!',
-  g: 'Say: Have Good game!',
+  g: 'Say: Have a good game!',
   h: 'Say: Have fun!'
 };
 
