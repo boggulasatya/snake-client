@@ -10,14 +10,9 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  
   conn.on("connect", () => {
   console.log("Successfully connected to the server!");
   conn.write("Name: SVB");
-
-  //setInterval(() => {
-   // console.log("Move: up");
-  //}, 50000);
 });
 
   conn.on("data", (data) => {
