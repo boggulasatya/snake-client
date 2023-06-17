@@ -1,3 +1,5 @@
+const { moveKeys, sayMessage } = require("./constants");
+
 let connection;
 let setupInput = (conn) => {
   connection = conn;
@@ -15,27 +17,16 @@ let setupInput = (conn) => {
 const handleUserInput = (key) => {
   if (key === "\u0003") {
     process.exit();
+  
   }
-  if (key === 'w') {
-    connection.write('Move: up');
+  const move = moveKeys[key];
+  if(move) {
+    connection.write(move);
   }
-  if (key === 'a') {
-    connection.write('Move: left');
-  }
-  if (key === 's') {
-    connection.write('Move: down');
-  }
-  if (key === 'd') {
-    connection.write('Move: right');
-  } 
-  if (key === 'm') {
-    connection.write("Say: Hey Snake!");
-  }  
-  if (key === 'g') {
-    connection.write('Say: Have Good game!');
-  }
-  if (key === 'h') {
-    connection.write('Say: Have fun!'); 
+
+  const message = sayMessage[key];
+  if(message) {
+    connection.write(message);
   }
 };
 
